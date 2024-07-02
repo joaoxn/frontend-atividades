@@ -97,6 +97,7 @@ function notasMateria() {
   let i = 0;
   while (i < 4) {
     let nota = parseFloat(window.prompt("Informe a nota " + (i + 1) + ":"));
+    if (!nota) nota = null;
     notas.push(nota);
     i++;
   }
@@ -132,6 +133,7 @@ function notasMateria() {
   adicionarLinhaTabela(dadosMateria, media);
 
   exibirMediaGeral();
+  exibirMaiorMedia();
 }
 
 /* LabScore pt.1 - Exercício 7 */
@@ -230,4 +232,10 @@ function notasPadrao() {
   }
   exibirMediaGeral()
   exibirMaiorMedia()
+}
+
+function removeAllNotas() {
+  localStorage.removeItem("notas")
+  localStorage.removeItem("mediasMateria")
+  window.location = window.location
 }
