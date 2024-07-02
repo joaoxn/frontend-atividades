@@ -1,0 +1,39 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 3rem;
+}
+
+.login label {
+  font-size: large;
+}
+
+.login input {
+  height: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+.login .form-line {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.login .form-input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 1rem;
+}
+
+.login .input-inner-group {
+  display: flex;
+  align-items: center;
+}
+
+.login .input-inner-group * {
+  margin: 0 0.5rem;
+}
